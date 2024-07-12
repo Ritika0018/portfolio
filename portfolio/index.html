@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8ebd06186e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>web developer</p>
+                <h1>Hi,I'm<span> Ritika</span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="imageuser1.jpeg">
+                </div>   
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p>I am an engineering student pursuing a B.Tech at Kurukshetra University, specializing in electronic and communication engineering. With a strong foundation in HTML ,CSS, bootstrap,php , I have engaged in various projects, including Amazon clone,switch bulb, registration form. I am passionate about continuous learning</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('Educattion')">Educattion</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li> 
+                            <li><span>PHP</span></li>
+                            <li><span>BOOTSTRAP</span></li> 
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id="Experience">
+                        <ul>
+                            <li><span>oct-2022</span><br> internship at BHARAT INTERN</li> 
+                            <li><span>oct-2022</span><br> Web Developer training at INTERNSHALA</li>
+                            <li><span>sep-2022</span><br> Bootcamp with DEVTOWN</li>
+                            <li><span>jul-2022</span><br> internship at MUSKURAHAT FOUNDATION</li> 
+                                
+                        </ul>
+                    </div>
+                    <div class="tab-contents"id="Educattion">
+                        <ul>
+                            <li><span>2024-current</span><br> BTech at UIET,Kurukshetra University</li>
+                            <li><span>2022</span><br>12th with PCM</li> 
+                            <li><span>2020</span><br> 10th</li>
+                        </ul>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------services------------ -->
+    <div id="services">
+        <div id="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-web-awesome"></i>
+                    <h2>Web Design</h2>
+                    <p>Offering professional web design services to create visually stunning, user-friendly websites tailored to your business needs.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ------------portfolio---------- -->
+    <div id="portfolio"> 
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image-work1.png">
+                    <div class="layer">
+                        <h3>Amazon clone</h3>
+                        <p>This project is a front-end clone of the popular e-commerce website Amazon, built using HTML, CSS, and JavaScript.  </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image-work2.png">
+                    <div class="layer">
+                        <h3>IIT Kharagpur US Trip Registration Form</h3>
+                        <p>TThis project is a registration form for the IIT Kharagpur US trip, built using HTML, CSS, and PHP.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image-work3.png">
+                    <div class="layer">
+                        <h3>Bulb Control Website </h3>
+                        <p>This project is a simple interactive website that allows users to turn a bulb on and off using HTML, CSS, and JavaScript. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image-work4.png">
+                    <div class="layer">
+                        <h3>Chapter Management Project</h3>
+                        <p>This project allows users to add and delete chapters dynamically using HTML, CSS, and JavaScript.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ----------contact---------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-regular fa-envelope"></i> ritikanigah25@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9468310629</p>
+                    <div class="soical-icons">
+                        <a href="https://www.linkedin.com/in/ritika-nigah250305"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Ritika0018"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder=" Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>                   
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Ritika.Made with <i class="fa-solid fa-heart"></i> by Easy tutorials</p>
+        </div>
+     </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby0CdVvQ6NVSTlIlW0Fln0oqCW_MGxg2tuRjXC9GyupYuW_nJFtcNX6v87P7orWCfROlQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
